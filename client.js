@@ -77,8 +77,8 @@ if(employee.annualSalary > annualSalary){
 if(bonusPercentage > 0.13){
   bonusPercentage =0.13;
 }
-let totalBonus= employee.annualSalary * bonusPercentage
-let totalCompensation= number(employee.annualSalary) + totalBonus
+let totalBonus= employee.annualSalary * bonusPercentage;
+let totalCompensation= number(employee.annualSalary) + totalBonus;
 
 return {
   name: employees.name,
