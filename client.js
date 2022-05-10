@@ -40,3 +40,55 @@ const employees = [
 // Ask questions when you don't.
 
 console.log( employees );
+
+for ( let employee of employees){
+  console.log(employee);
+  let returnValue=calculateBonus(employee);
+  console.log(returnValue);
+}
+
+function calculateBonus(employee) {
+console.log('calculate emplyee', employee );
+
+
+let bonusPercentage;
+
+if(employee.reviewRating <-2){
+  bonusPercentage=0;
+
+}
+else if( employee.reviewRating ===3){
+  bonusPercentage=0,04;
+}
+else if(employee.reviewRating===4){
+  bonusPercentage = 0,06;
+
+}
+else if( employee.reviewRating ===5) {
+  bonusPercentage =0.10;
+}
+if(employee.employeeNumber.length ===4 ){
+  bonusPercentage += 0.05;
+}
+if(employee.annualSalary > annualSalary){
+  bonusPercentage -=0.01;
+}
+
+if(bonusPercentage > 0.13){
+  bonusPercentage =0.13;
+}
+let totalBonus= employee.annualSalary * bonusPercentage
+let totalCompensation= number(employee.annualSalary) + totalBonus
+
+return {
+  name: employees.name,
+  bonusPercentage: bonusPercentage,
+totalCompensation: totalCompensation,
+totalBonus: total
+};
+
+
+}
+
+
+ 
